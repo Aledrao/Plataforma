@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ParallaxBackground.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Monstro.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Passagem.tscn" type="PackedScene" id=4]
+[ext_resource path="res://grama.tres" type="TileSet" id=5]
+
+[node name="Cena2" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+editor/display_folded = false
+position = Vector2( 384.094, 297.556 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
+editor/display_folded = false
+
+[node name="Monstro" parent="." instance=ExtResource( 3 )]
+position = Vector2( 527.042, 354.315 )
+
+[node name="Passagem" parent="." instance=ExtResource( 4 )]
+position = Vector2( 179.893, 332.81 )
+cenas = "World.tscn"
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 786436, 0, 0, 786437, 1, 0, 786438, 1, 0, 786439, 1, 0, 786440, 1, 0, 786441, 1, 0, 786442, 1, 0, 786443, 1, 0, 786444, 1, 0, 786445, 1, 0, 786446, 1, 0, 786447, 1, 0, 786448, 1, 0, 786449, 1, 0, 786450, 1, 0, 786451, 1, 0, 786452, 1, 0, 786453, 2, 0 )
